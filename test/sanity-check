@@ -1,0 +1,18 @@
+#!/bin/bash --verbose
+make clean >&/dev/null
+echo "start sanity test"
+cp	./bin/spitbol	tbol
+make -f Makefile BASEBOL=./tbol
+mv s.lex tbol.lex.0
+mv s.s tbol.s.0
+cp spitbol tbol
+make -f Makefile BASEBOL=./tbol
+mv s.lex tbol.lex.1
+mv s.s tbol.s.1
+cp spitbol tbol
+make -f Makefile BASEBOL=./tbol
+mv s.lex tbol.lex.2
+mv s.s tbol.s.2
+echo "comparing generated .s files"
+diff tbol.s.1 tbol.s.2
+echo "end sanity test"
