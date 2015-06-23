@@ -17,6 +17,8 @@ It can also be built using Patrice Bellard's tiny C compiler, tcc, and the musl 
 	make -f Makefile-tcc
 ```
 
+Either method of building SPITBOL produces the file ./spitbol, which can be used to compile and execute SPITBOL programs.
+
 The source files for musl, nasm and tcc can be found in the directory ./tools. If your unix system does not incude binaries
 for these tools, they can be build from the source in the ./tools directory using gcc. Just unpack the tarballs and follow
 te instructions to build and install, as described in INSTALL or README, as appropriate.
