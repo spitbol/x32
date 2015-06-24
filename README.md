@@ -1,6 +1,8 @@
 # SPITBOL x32
 
-SPITBOL x32 is an efficient implementation of the SNOBOL4 programming language for the 32-bit i386 architecture.
+SPITBOL x32 is an efficient implementation of the SNOBOL4 programming language for the 32-bit i386 architecture, using the Unix system
+and its derivatives, including Linux.
+
 It is written in a portable assembly language called MINIMAL, 
 with runtime support provided by code written in C.
 
